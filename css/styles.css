@@ -1,0 +1,121 @@
+/*Set Font in All Elements*/
+* {
+	font-family: "Fira Sans";
+	font-weight: 400;
+}
+
+body{
+	margin: 20px 50px 0px 50px;
+	background-color: #F0ECEE;
+}
+
+/*Navigation Styles*/
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	padding-right: 10px;
+	padding-left: 10px;
+	margin-bottom: 10px;
+}
+
+a {
+	text-decoration: none;
+	color: #88898B;
+}
+
+/*Pink Text Styles*/
+em {
+	color: #FF4850;
+	font-style: normal;
+	font-weight: 600;
+}
+
+/*Button Styles*/
+.button {
+	color: #F0ECEE;
+	height: auto;
+	width: auto;
+	background-color: #FF4850;
+	text-align: center;
+	padding: 10px;
+	border: 2px solid #FF4850;
+	border-radius: 5px;
+}
+
+/*fussing with headings*/
+h1 {
+	font-weight: 600;
+}
+
+#lefty {
+	margin: 5px;
+	font-weight: 600;
+}
+
+/*the container that switches direction*/
+#upper {
+	align-items: center;
+}
+
+/*the always-vertical section*/
+#lower {
+	position: relative;
+	top: 100px;
+	clear: both;
+}
+
+/*Fussing with the promise element*/
+#promise {
+	color: #88898B;
+	font-weight: 300;
+	margin: 20px 0px 20px 0px;
+}
+
+/*background image, hidden unless desktop*/
+#doggo {
+	position: absolute;
+	top: 0px;
+	z-index: -1;
+	width: 90%;
+	display: none;
+}
+
+/*hover states*/
+a:hover {
+	color: #FF4850;
+}
+
+.button:hover {
+	color: #FF4850;
+	background-color: #CCC;
+}
+
+@media screen and (min-width:768px) {
+	li {
+		margin: 0px;
+	}
+	#lefty {
+		float: left;
+	}
+	#upper {
+		float: right;
+	}
+	#lower {
+		width: 40%;
+	}
+	#doggo {
+		display: inline;
+	}
+	.button {
+		max-width: 200px;
+	}
+	.switcher {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+}
